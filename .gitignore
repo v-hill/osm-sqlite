@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VisualStudioCode
+*settings.json
+*tasks.json
+*launch.json
+*extensions.json
+
+# Ignore downloaded OSM data
+/downloads/*

@@ -1,4 +1,4 @@
-# osm-sqlite
+# osmsqlite
 Convert OpenStreetMap OSM files to an SQLite database
 
 

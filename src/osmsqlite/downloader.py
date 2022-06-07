@@ -5,11 +5,14 @@ data from the OpenStreetMap dataset available for free download.
 """
 
 import os
-import time
 
 import requests
 from fake_useragent import UserAgent
 from tqdm import tqdm
+
+
+class DownloadError(Exception):
+    pass
 
 
 class GeofabrikDownloader:
@@ -39,9 +42,6 @@ class GeofabrikDownloader:
         try:
             resp = requests.get(url, stream=True, headers=headers)
             resp.raise_for_status()
-        except resp.status_code == 429:
-            print(f"Too Many Requests, waiting for {wait_to_retry} seconds")
-            time.sleep(wait_to_retry)
         except requests.exceptions.HTTPError as err:
             raise SystemExit(err)
 
@@ -94,5 +94,5 @@ class GeofabrikDownloader:
         print(f"Downloading {path_to_file} to {relative_path}")
         try:
             self._download_file_from_url(download_url, path_to_file)
-        except Exception as err:
+        except DownloadError as err:
             print(f"Download failed.\n{err}")

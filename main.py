@@ -1,7 +1,7 @@
 """Main file for development and testing."""
 import os
 
-from downloader import GeofabrikDownloader
+from src.osmsqlite.downloader import GeofabrikDownloader
 
 download_url = (
     "https://download.geofabrik.de/europe/great-britain"

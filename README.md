@@ -1,7 +1,7 @@
 # osmsqlite
 Convert OpenStreetMap OSM files to an SQLite database
 
-![Tests](https://github.com/mCodingLLC/SlapThatLikeButton-TestingStarterProject/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/v-hill/osm-sqlite/actions/workflows/tests.yml/badge.svg)
 
 
 Before committing run:

@@ -2,7 +2,7 @@
 
 import pytest
 
-from src.osmsqlite.downloader import GeofabrikDownloader
+from osmsqlite.downloader import GeofabrikDownloader
 
 
 def test_headers():

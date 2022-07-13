@@ -1,6 +1,6 @@
 flake8==4.0.1
 mypy===0.961
-pytest-cov==3.0.0
-pytest==7.1.1
+pytest-cov==2.12.1
+pytest==6.2.5
 tox==3.25
 types-requests==2.27.30
